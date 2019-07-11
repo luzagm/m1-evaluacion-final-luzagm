@@ -14,43 +14,25 @@
   </head>
 
   <body>
-    <header>
-      <div class="menu">
-        <img class="menu_icon" src="./assets/images/ico-menu.svg" />
-      </div>
-
-      <div class="hero_image">
-        <div class="hero_text">
-          <h1 class="title">ANONYMOUS PROXY</h1>
-          <h4 class="subtitle">In hac habitasse platea dictumst.</h4>
-        </div>
-      </div>
-
-      <div class="down" href="#main">
-        <a class="down_circle">
-          <img class="down_arrow" src="./assets/images/ico-scroll-down.svg" />
-        </a>
-      </div>
-    </header>
+    <partial src="_header.html"></partial>
 
     <main id="main" class="main">
       <section class="s1">
-        <h5 class="bluetitle">Insomnia Tips</h5>
+        <h5 class="small_title">Insomnia Tips</h5>
         <h2 class="par_title">Looking Through A Window</h2>
         <p class="par">
           Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis,
           at luctus ex diam nec lectus. Vivamus semper sodales rutrum.
         </p>
         <div>
-            <button class="btn" href="#">GO</button>
-          </div>
+          <button class="btn" href="#">GO</button>
+        </div>
       </section>
 
       <section class="s2">
         <div>
           <h2 class="par_title">3 Reasons To Purchase</h2>
         </div>
-        
         <div class="text_box">
           <div>
             <h4 class="par_subtitle">Ut sed metus</h4>
@@ -64,18 +46,44 @@
             <h4 class="par_subtitle">Morbi dictum</h4>
             <p class="par">Aliquam in dolor et dolor tincidunt.</p>
           </div>
-          
+
           <div>
-              <button class="btn btn_default">More reasons</button>
-            </div>
-        
+            <button class="btn btn_default" href="#">More reasons</button>
           </div>
+        </div>
+      </section>
+
+      <section class="s3">
+
+        <div class="up">
+            <a class="up_circle" href="#header">
+            <img class="up_arrow" src="./assets/images/ico-arrow.svg" />
+        </div>
+
+        <div>
+          <ul class="list">
+            <li><a>ARTICLES</a></li>
+            <li><a>BOOKS</a></li>
+            <li><a>EVENTS</a></li>
+            <li><a>REASONS</a></li>
+            <li><a>TIPS</a></li>
+          </ul>
+        </div>
+
+        <div>
+            <ul class="list">
+              <li><a>TWITTER</a></li>
+              <li><a>INSTAGRAM</a></li>
+              <li><a>MASTODON.SOCIAL</a></li>
+            </ul>
+          </div>
+
       </section>
     </main>
 
-    <!-- <div class="page">
-    <partial src="_header.html" label="Header"></partial>
-    <partial src="_main.html" label="Main"></partial>
-  </div> -->
+
+  
+    <!-- <partial src="_main.html" label="Main"></partial> -->
+
   </body>
 </html>
