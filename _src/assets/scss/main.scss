@@ -1,7 +1,78 @@
-
-
 body {
-	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .hero {
+	display: flex;
+	flex-direction: column;
+} */
+
+.menu {
+  position: fixed;
+  background-color: #0271bc;
+  height: 44px;
+  width: 44px;
+  z-index: 1;
+
+  &_icon {
+    padding: 15px 14px;
+  }
+}
+
+.hero_image {
+	background-image: url("../images/cover.jpg");
+	height: 568px;
+	background-size: cover;
+	background-position: center;
+/* 	display: flex;
+	justify-content: center; */
+}
+
+.hero_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	top: 284px;
+	widows: 100vw;
+	color: white;
+}
+
+.title {
+	display: inline-block;
+	text-align: center;
+	font-size: 42px;
+	line-height: 52px;
+	height: 110px;
+	width: 290px;
+	padding: 0;
 	margin: 0;
-	height: 100vh;
+}  
+
+.subtitle {
+	font-size: 10px;
+	margin: 0;
+}
+
+.down {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	position: absolute;
+	width: 100vw;
+	top: 470px;
+
+	&_circle {
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	background-color: white;
+	}
+	
+	&_arrow {
+		position: absolute;
+		padding: 18px 12px 15px 13px;
+	}
 }
