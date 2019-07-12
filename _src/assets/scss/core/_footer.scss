@@ -16,7 +16,6 @@
   position: relative;
   width: 100vw;
   bottom: 22.5px;
-  transition: transform ease 2s;
 
   &_circle {
     height: 45px;
@@ -30,10 +29,6 @@
     position: absolute;
     padding: 12px 12px 10px 12px;
   }
-}
-
-.up:hover {
-  transform: scale(1.5) rotate(360deg);
 }
 
 .list {

@@ -15,7 +15,8 @@ body {
 }
 
 .s1 {
-  padding: 30px 15px;
+  padding: 30px 15px 45px 15px;
+/*   height: 376px; */
 }
 
 .small_title {
@@ -23,11 +24,13 @@ body {
   font-size: 14px;
   line-height: 30px;
   color: $color-lightblue;
+  margin: 0;
 }
 
 .par_title {
   font-family: $Roboto_slab;
   font-size: 24px;
+  margin: 0 0 15px 0;
 }
 
 .par {
@@ -44,9 +47,9 @@ body {
 .s2 {
   text-align: center;
   background-color: $color-iceblue;
-  padding-top: 30px;
-  padding-right: 15px;
-  padding-left: 15px;
+  height: 624px;
+  padding: 30px 15px 0 15px;
+
 }
 
 .text_box {
@@ -73,11 +76,12 @@ body {
   height: 45px;
   width: 76px;
   border-radius: 22.5px;
-  margin: 30px 0 15px 0;
+  margin: 30px 0 0 0;
   font-family: $Roboto_reg_400;
   font-size: 20px;
   font-weight: 500;
   color: $color-orange;
+  transition: all ease 2s;
 }
 
 .btn_default {
@@ -85,11 +89,12 @@ body {
   background: $color-orange;
   margin: 0;
   color: $color-white;
+  transition: all ease 2s;
 }
 
 .btn:hover {
-  background: $color-orange;
-  color: $color-white;
+    background: $color-orange;
+    color: $color-white;
 }
 
 .btn_default:hover {
@@ -102,6 +107,7 @@ body {
   .s1 {
     padding: 30px 39px;
     margin: 0;
+    height: 270px;
   }
   
   .small_title {
@@ -131,6 +137,7 @@ body {
     padding-top: 30px;
     padding-right: 15px;
     padding-left: 15px;
+     height: 397px;;
   }
 
   .s2, .par_title {

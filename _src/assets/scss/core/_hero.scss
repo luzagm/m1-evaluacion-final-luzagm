@@ -27,7 +27,7 @@
   align-items: center;
   position: relative;
   top: 284px;
-  widows: 100vw;
+  width: 100vw;
   color: $color-white;
 }
 
@@ -79,7 +79,7 @@
 
   .hero_text {
     top: 384px;
-    widows: 100vw;
+    width: 100vw;
     color: $color-white;
   }
 
@@ -101,3 +101,21 @@
     top: 678px;
   }
 }
+
+@media all and (min-width: 1200px) {
+  .title {
+    height: 264px;
+    width: 730px;
+    font-size: 100px;
+    line-height: 132px;
+  }
+
+  .subtitle {
+    margin-top: 0;
+  }
+
+  .down {
+    top: 710px;
+  }
+}
+
