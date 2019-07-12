@@ -1,6 +1,12 @@
 @import "core/variables";
 @import "components/typography";
 
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 .menu {
   position: fixed;
   height: 44px;
@@ -16,8 +22,10 @@
 .hero_image {
   background-image: url("../images/cover.jpg");
   height: 568px;
+  width: 100vw;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .hero_text {
@@ -27,12 +35,10 @@
   align-items: center;
   position: relative;
   top: 284px;
-  width: 100vw;
   color: $color-white;
 }
 
 .title {
-  display: inline-block;
   text-align: center;
   height: 110px;
   width: 290px;
@@ -47,6 +53,7 @@
 .subtitle {
   font-family: $Roboto_reg_400;
   font-size: 16px;
+  line-height: 21px;
   margin: 0;
 }
 
@@ -94,6 +101,7 @@
   .subtitle {
     margin-top: 20px;
     font-size: 24px;
+    line-height: 32px;
     font-weight: normal;
   }
 
@@ -103,6 +111,10 @@
 }
 
 @media all and (min-width: 1280px) {
+  .hero_image {
+    height: 100vh;
+  }
+
   .title {
     height: 264px;
     width: 730px;
@@ -115,6 +127,6 @@
   }
 
   .down {
-    top: 710px;
+    top: 93vh;
   }
 }
