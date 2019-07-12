@@ -16,7 +16,7 @@ body {
 
 .s1 {
   padding: 30px 15px 45px 15px;
-/*   height: 376px; */
+  /*   height: 376px; */
 }
 
 .small_title {
@@ -49,7 +49,6 @@ body {
   background-color: $color-iceblue;
   height: 624px;
   padding: 30px 15px 0 15px;
-
 }
 
 .text_box {
@@ -93,8 +92,8 @@ body {
 }
 
 .btn:hover {
-    background: $color-orange;
-    color: $color-white;
+  background: $color-orange;
+  color: $color-white;
 }
 
 .btn_default:hover {
@@ -103,30 +102,29 @@ body {
 }
 
 @media all and (min-width: 768px) {
-
   .s1 {
     padding: 30px 39px;
     margin: 0;
     height: 270px;
   }
-  
+
   .small_title {
     margin: 0;
     font-size: 14px;
   }
-  
+
   .par_title {
     padding-bottom: 30px;
     font-size: 26px;
     line-height: 45px;
     font-weight: bold;
   }
-  
+
   .par {
     font-size: 20px;
     line-height: 30px;
   }
-  
+
   .greypar {
     color: $color_grey;
   }
@@ -137,13 +135,14 @@ body {
     padding-top: 30px;
     padding-right: 15px;
     padding-left: 15px;
-     height: 397px;;
+    height: 397px;
   }
 
-  .s2, .par_title {
+  .s2,
+  .par_title {
     margin: 0;
   }
-  
+
   .text_box {
     grid-template-columns: 212.3px 212.3px 212.3px;
     grid-template-rows: 105px 45px;
@@ -153,7 +152,7 @@ body {
     padding-bottom: 67px;
     margin: 0 40px 0 40px;
   }
-  
+
   .par_subtitle {
     font-size: 24px;
     padding-bottom: 14px;
@@ -163,7 +162,7 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  
+
   .btn_default_box {
     grid-column: span 3;
   }
@@ -172,34 +171,32 @@ body {
     margin: 0;
     padding: 0;
   }
-
 }
 
-
-@media all and (min-width: 1200px) {
-
+@media all and (min-width: 1280px) {
   .s1 {
     padding: 60px 275px;
     height: 240px;
   }
-  
+
   .small_title {
     margin: 0;
     font-size: 14px;
   }
-  
+
   .par_title {
     padding-bottom: 30px;
     font-size: 26px;
     line-height: 45px;
     font-weight: bold;
   }
-  
+
   .par {
     font-size: 20px;
     line-height: 30px;
+    font-stretch: normal;
   }
-  
+
   .greypar {
     color: $color_grey;
   }
@@ -210,13 +207,14 @@ body {
     padding-top: 60px;
     padding-right: 15px;
     padding-left: 15px;
-     height: 397px;;
+    height: 397px;
   }
 
-  .s2, .par_title {
+  .s2,
+  .par_title {
     margin: 0;
   }
-  
+
   .text_box {
     grid-template-columns: 353.8px 353.8px 353.8px;
     grid-template-rows: 105px 45px;
@@ -224,9 +222,9 @@ body {
     grid-row-gap: 60px;
     padding-top: 15px;
     padding-bottom: 67px;
-    margin: 0 40px 0 40px;
+    margin: 0 85px 0 85px;
   }
-  
+
   .par_subtitle {
     font-size: 24px;
     padding-bottom: 14px;
@@ -234,12 +232,11 @@ body {
 
   .btn {
     width: 160px;
-    }
-  
+  }
+
   .btn_default {
     width: 255px;
     margin: 0;
     padding: 0;
   }
-
 }
