@@ -1,85 +1,12 @@
+@import "core/hero";
+@import "core/footer";
 @import "core/variables";
 @import "components/typography";
-
 
 body {
   margin: 0;
   box-sizing: border-box;
 }
-
-/* HERO */
-
-.menu {
-  position: fixed;
-  background-color: $color-mediumblue;
-  height: 44px;
-  width: 44px;
-  z-index: 1;
-
-  &_icon {
-    padding: 15px 14px;
-  }
-}
-
-.hero_image {
-  background-image: url("../images/cover.jpg");
-  height: 568px;
-  background-size: cover;
-  background-position: center;
-}
-
-.hero_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  top: 284px;
-  widows: 100vw;
-  color: $color-white;
-}
-
-.title {
-  display: inline-block;
-  text-align: center;
-  font-family: $Roboto_slab;
-  font-size: 42px;
-  line-height: 52px;
-  height: 110px;
-  width: 290px;
-  padding: 0;
-  margin: 0;
-}
-
-.subtitle {
-  font-family: $Roboto_reg_400;
-  font-size: 16px;
-  margin: 0;
-}
-
-.down {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  position: absolute;
-  width: 100vw;
-  top: 470px;
-
-  &_circle {
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    background-color: $color-white;
-    z-index: 0;
-  }
-
-  &_arrow {
-    position: absolute;
-    padding: 18px 12px 15px 13px;
-  }
-}
-
-/* MAIN */
 
 .main {
   display: flex;
@@ -87,15 +14,15 @@ body {
   justify-content: center;
 }
 
-
 .s1 {
   padding: 30px 15px;
 }
 
 .small_title {
   font-family: $Roboto_reg_400;
-  color: $color-lightblue;
   font-size: 14px;
+  line-height: 30px;
+  color: $color-lightblue;
 }
 
 .par_title {
@@ -104,23 +31,22 @@ body {
 }
 
 .par {
+  margin: 0;
   font-family: $Roboto_reg_400;
   font-size: 18px;
   line-height: 30px;
-  margin: 0;
 }
 
 .greypar {
   color: $color_grey;
 }
 
-
 .s2 {
   text-align: center;
+  background-color: $color-iceblue;
   padding-top: 30px;
   padding-right: 15px;
   padding-left: 15px;
-  background-color: $color-lightblue;
 }
 
 .text_box {
@@ -134,10 +60,11 @@ body {
 }
 
 .par_subtitle {
-  font-family: $Roboto_slab;
-  font-size: 18px;
   margin: 0;
   padding: 0;
+  font-family: $Roboto_slab;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .btn {
@@ -153,82 +80,86 @@ body {
   color: $color-orange;
 }
 
-.btn.btn_default {
+.btn_default {
   width: 184px;
-  color: $color-white;
   background: $color-orange;
   margin: 0;
-}
-
-/* FOOTER */
-
-.s3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: $color-darkblue;
   color: $color-white;
-  position: relative;
-  bottom: 0;
 }
 
-.up {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  position: relative;
-  width: 100vw;
-  bottom: 22.5px;
-  
-  &_circle {
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    background-color: $color-white;
-    box-shadow: 5px black;
-  }
-
-  &_arrow {
-    position: absolute;
-    padding: 12px 12px 10px 12px;
-  }
-}
-
-.list {
-  display: grid;
-  grid-template-rows: 150px 100px 60px;
-  grid-gap: 30px;
-  padding-bottom: 45px;
-  font-family: $Roboto_reg_400;
-  line-height: 30px;
-  text-align: center;
-  
-  &_menu {
-  list-style: none;
-  padding-left: 0;
-  }
-
-  &_item {
-  list-style: none;
-  text-decoration: none;
+.btn:hover {
+  background: $color-orange;
   color: $color-white;
-  }   
-  
-  &_bottom {
-  font-size: 14px;
-  }
 }
 
-/* ul {
-
-  padding: 0;
-}
-
-a  {
-  text-decoration: none;
-    list-style: none;
-} */
-
-.heart {
+.btn_default:hover {
+  background: $color-white;
   color: $color-orange;
+}
+
+@media all and (min-width: 768px) {
+
+  .s1 {
+    padding: 30px 39px;
+    margin: 0;
+  }
+  
+  .small_title {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .par_title {
+    padding-bottom: 30px;
+    font-size: 26px;
+    line-height: 45px;
+    font-weight: bold;
+  }
+  
+  .par {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .greypar {
+    color: $color_grey;
+  }
+
+  .s2 {
+    text-align: center;
+    background-color: $color-iceblue;
+    padding-top: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .s2, .par_title {
+    margin: 0;
+  }
+  
+  .text_box {
+    grid-template-columns: 212.3px 212.3px 212.3px;
+    grid-template-rows: 105px 45px;
+    grid-column-gap: 27.7px;
+    grid-row-gap: 60px;
+    padding-top: 15px;
+    padding-bottom: 67px;
+    margin: 0 40px 0 40px;
+  }
+  
+  .par_subtitle {
+    font-size: 24px;
+    padding-bottom: 14px;
+  }
+
+  .btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .btn_default {
+    margin: 0;
+    padding: 0;
+  }
+
 }
