@@ -9,6 +9,24 @@
   justify-content: center;
 }
 
+.new {
+  background-color: $color-orange;
+  color: $color-white;
+
+  &_link {
+    color: $color-white;
+  }
+
+  &_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
 .s1 {
   padding: 30px 15px 45px 15px;
 }
@@ -95,6 +113,16 @@
 }
 
 @media all and (min-width: 768px) {
+  .new_box {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 20px;
+      background-color: $color-darkblue;
+      align-items: center;
+    }
+  
+  
+  
   .s1 {
     padding: 30px 39px;
     height: 270px;
