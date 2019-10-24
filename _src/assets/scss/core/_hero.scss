@@ -1,71 +1,57 @@
 @import "core/variables";
 @import "components/typography";
 
-body {
-  margin: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
 .menu {
   position: fixed;
-  height: 44px;
-  width: 44px;
-  background-color: $color-mediumblue;
   z-index: 1;
+  height: 44px;
+  background-color: $color-mediumblue;
 
-  &_icon {
-    padding: 15px 14px;
+  &__icon {
+    padding: 15px;
   }
 }
 
-.hero_image {
-  background-image: url("../images/cover.jpg");
-  height: 568px;
-  width: 100vw;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
+.hero {
+  &__image {
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
 
-.hero_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  top: 284px;
-  color: $color-white;
-}
+  &__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 30vh;
+    color: $color-white;
+  }
 
-.title {
-  text-align: center;
-  height: 110px;
-  width: 290px;
-  padding: 0;
-  margin: 0;
-  font-family: $Roboto_slab;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  font-size: 42px;
-  line-height: 52px;
-}
+  &__title {
+    width: 290px;
+    text-align: center;
+    font-family: $Roboto_slab;
+    font-size: 42px;
+    line-height: 52px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
 
-.subtitle {
-  font-family: $Roboto_reg_400;
-  font-size: 16px;
-  line-height: 21px;
-  margin: 0;
+  &__subtitle {
+    font-family: $Roboto_reg_400;
+    line-height: 21px;
+  }
 }
 
 .down {
   display: flex;
   justify-content: center;
-  align-content: center;
   position: absolute;
   width: 100vw;
-  top: 470px;
+  top: 48vh;
 
-  &_circle {
+  &__circle {
     height: 45px;
     width: 45px;
     border-radius: 50%;
@@ -73,57 +59,49 @@ body {
     z-index: 0;
   }
 
-  &_arrow {
+  &__arrow {
     position: absolute;
     padding: 18px 12px 15px 13px;
   }
 }
 
 @media all and (min-width: 768px) {
-  .hero_image {
-    height: 768px;
-  }
+  .hero {
+    &__text {
+      top: 40vh;
+      width: 100vw;
+    }
 
-  .hero_text {
-    top: 384px;
-    width: 100vw;
-    color: $color-white;
-  }
+    &__title {
+      width: 690px;
+      font-weight: bold;
+      font-size: 80px;
+      line-height: 106px;
+    }
 
-  .title {
-    height: 212px;
-    width: 690px;
-    font-weight: bold;
-    font-size: 80px;
-    line-height: 106px;
-  }
-
-  .subtitle {
-    margin-top: 20px;
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: normal;
+    &__subtitle {
+      margin-top: 20px;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 
   .down {
-    top: 678px;
+    top: 72vh;
   }
 }
 
-@media all and (min-width: 1280px) {
-  .hero_image {
-    height: 100vh;
-  }
+@media all and (min-width: 1024px) {
+  .hero {
+    &__title {
+      font-size: 100px;
+      line-height: 132px;
+    }
 
-  .title {
-    height: 264px;
-    width: 730px;
-    font-size: 100px;
-    line-height: 132px;
-  }
-
-  .subtitle {
-    margin-top: 0;
+    &__subtitle {
+      margin-top: 0;
+    }
   }
 
   .down {
